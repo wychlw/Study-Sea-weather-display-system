@@ -26,7 +26,7 @@ emmmm
            ->升压12v ->LED
 
 ## software
-由于没有找到ESP8266对应的st7735 module,其中的st7735.py由ESP32的模块改来(原地址:<a href=“https://github.com/GuyCarver/MicroPython/blob/master/lib/ST7735.py”>here</a>)
+由于没有找到ESP8266对应的st7735 module,其中的st7735.py由ESP32的模块改来(原地址:<a href=“https://github.com/GuyCarver/MicroPython/blob/master/lib/ST7735.py”>https://github.com/GuyCarver/MicroPython/blob/master/lib/ST7735.py</a>)
 但由于mycropython只给ESP8266提供了8k的栈空间,且目前我暂时未找到扩大方法,光是把font加载进去(有5kb)就已经不行了(且bytearray无法声明静态)。所以，为了避免内存错误，请务必并进行改造及预编译了的.mpy文件
 另外，随意在main中import可能也会崩(内存真的到了极限了)，所以...请谨慎import
 顺便，获取的东西是now.js，示例见fdd的工程
